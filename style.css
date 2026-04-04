@@ -164,3 +164,22 @@ summary::-webkit-details-marker{display:none}
 @media (max-width: 640px){
   .floating-etsy{right:12px;bottom:12px;padding:12px 14px;font-size:.95rem}
 }
+
+.hero-subline{
+  margin:14px 0 0;
+  color:var(--muted);
+  font-size:.95rem;
+  font-weight:600;
+}
+.card{position:relative}
+.hover-badge{
+  position:absolute;top:14px;left:14px;z-index:2;
+  font-size:.76rem;padding:7px 10px;border-radius:999px;
+  background:var(--text);color:#fff;opacity:0;transform:translateY(-4px);
+  transition:opacity .25s ease, transform .25s ease;pointer-events:none;
+  box-shadow:0 10px 24px rgba(0,0,0,.16);
+}
+.card:hover .hover-badge{opacity:1;transform:translateY(0)}
+.pinterest-cta{background:linear-gradient(180deg,#fff7f7,#ffffff)}
+.pinterest-btn{background:#e60023}
+.pinterest-btn:hover{background:#c9001f}
